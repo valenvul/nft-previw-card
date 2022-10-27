@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: hsl(217, 54%, 11%);
+}
+
+.card{
+    background: hsl(216, 50%, 16%);
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 13px;
+}
+
+.card_img{
+    width: 100%;
+    position: relative;
+}
+
+.card_img img{
+    height: 340px;
+    width:340px;
+    border-radius: 10px;
+}
+
+.card_img-icon{
+    position: absolute;
+    background-color: hsl(178, 100%, 50%, 60%);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    border-radius: 10px;
+}
+/* el parent element tiene que tener position: relative !! */
+
+.card_img-icon img{
+    height: 50px;
+    width: 50px;
+}
+
+.card_img-icon:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.card_body{
+    color: hsl(215, 51%, 70%);
+}
+
+.card_body-title{
+    color: white;
+    padding: 20px 0;
+}
+
+.card_body-title:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+.card_body-text{
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 30px;
+}
+
+.card_details{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding-bottom: 30px;
+}
+
+.eth{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    gap: 0.2 rem;
+}
+
+.eth_text{
+    color:  hsl(178, 100%, 50%);
+    font-weight: 400;
+    padding-left: 5px;
+}
+
+
+.time{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    gap: 0.2 rem;
+}
+
+.time_text{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    padding-left: 5px;
+}
+
+.card_footer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.creator_avatar{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.creator_text a{
+    color: white;
+    text-decoration: none;
+}
+
+.creator_text a:hover{
+    color: hsl(178, 100%, 50%);
+}
